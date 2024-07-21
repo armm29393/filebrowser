@@ -21,6 +21,7 @@ import("dayjs/locale/ro");
 import("dayjs/locale/ru");
 import("dayjs/locale/sk");
 import("dayjs/locale/sv");
+import("dayjs/locale/th");
 import("dayjs/locale/tr");
 import("dayjs/locale/uk");
 import("dayjs/locale/zh-cn");
@@ -95,6 +96,9 @@ export function detectLocale() {
       break;
     case /^sk\b/.test(locale):
       locale = "sk";
+      break;
+    case /^th\b/.test(locale):
+      locale = "th";
       break;
     case /^tr\b/.test(locale):
       locale = "tr";
